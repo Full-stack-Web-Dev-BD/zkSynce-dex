@@ -42,7 +42,7 @@ yarn-error.log*
 
 notes.txt
 .idea/
-
+myfile.txt
 package-lock.json
 package.json
 
