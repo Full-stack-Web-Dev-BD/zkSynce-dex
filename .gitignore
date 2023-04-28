@@ -44,6 +44,7 @@ notes.txt
 .idea/
 
 package-lock.json
+package.json
 
 cypress/videos
 cypress/screenshots
