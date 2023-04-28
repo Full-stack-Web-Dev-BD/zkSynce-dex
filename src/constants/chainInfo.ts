@@ -9,6 +9,7 @@ import celoLogo from 'assets/svg/celo_logo.svg'
 import celoSquareLogoUrl from 'assets/svg/celo_square_logo.svg'
 import optimismSquareLogoUrl from 'assets/svg/optimism_square_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
+import zkSynceLogoUrl from 'assets/svg/ZKSync.png'
 import polygonSquareLogoUrl from 'assets/svg/polygon_square_logo.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
 import { SupportedChainId } from 'constants/chains'
@@ -114,6 +115,21 @@ const CHAIN_INFO: ChainInfoMap = {
     statusPage: 'https://optimism.io/status',
     helpCenterUrl: 'https://help.uniswap.org/en/collections/3137778-uniswap-on-optimistic-ethereum-oξ',
     nativeCurrency: { name: 'Optimism Goerli Ether', symbol: 'görOpETH', decimals: 18 },
+    color: darkTheme.chain_420,
+  },
+  [SupportedChainId.zkSynceT]: {
+    networkType: NetworkType.L2,
+    blockWaitMsBeforeWarning: ms`25m`,
+    bridge: 'https://bridge.zksync.io/',
+    defaultListUrl: OPTIMISM_LIST,
+    docs: 'https://bridge.zksync.io/',
+    explorer: 'https://goerli.explorer.zksync.io/',
+    infoLink: 'https://goerli.explorer.zksync.io/',
+    label: 'zkSynceT',
+    logoUrl: zkSynceLogoUrl,
+    statusPage: 'https://goerli.explorer.zksync.io/',
+    helpCenterUrl: 'https://goerli.explorer.zksync.io/',
+    nativeCurrency: { name: 'zkSynceT', symbol: 'zkETH', decimals: 18 },
     color: darkTheme.chain_420,
   },
   [SupportedChainId.ARBITRUM_ONE]: {

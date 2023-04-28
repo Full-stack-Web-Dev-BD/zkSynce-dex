@@ -375,6 +375,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WETH',
     'Wrapped Ether'
   ),
+  [SupportedChainId.zkSynceT]: new Token(
+    SupportedChainId.zkSynceT,
+    '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
   [SupportedChainId.ARBITRUM_ONE]: new Token(
     SupportedChainId.ARBITRUM_ONE,
     '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',

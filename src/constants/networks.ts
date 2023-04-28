@@ -69,6 +69,10 @@ export const FALLBACK_URLS = {
     // "Safe" URLs
     'https://goerli.optimism.io',
   ],
+  [SupportedChainId.zkSynceT]: [
+    // "Safe" URLs
+    'https://goerli.explorer.zksync.io/',
+  ],
   [SupportedChainId.CELO]: [
     // "Safe" URLs
     `https://forno.celo.org`,
@@ -107,6 +111,10 @@ export const RPC_URLS = {
   ],
   [SupportedChainId.OPTIMISM_GOERLI]: [
     `https://optimism-goerli.infura.io/v3/${INFURA_KEY}`,
+    ...FALLBACK_URLS[SupportedChainId.OPTIMISM_GOERLI],
+  ],
+  [SupportedChainId.zkSynceT]: [
+    `https://testnet.era.zksync.dev`,
     ...FALLBACK_URLS[SupportedChainId.OPTIMISM_GOERLI],
   ],
   [SupportedChainId.ARBITRUM_ONE]: [

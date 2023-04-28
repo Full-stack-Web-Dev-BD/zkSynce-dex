@@ -304,7 +304,9 @@ export default function Swap({ className }: { className?: string }) {
     const maximumAmountIn = trade?.maximumAmountIn(allowedSlippage)
     return maximumAmountIn?.currency.isToken ? (maximumAmountIn as CurrencyAmount<Token>) : undefined
   }, [allowedSlippage, trade])
-  const allowance = usePermit2Allowance(
+  if (chainId !== undefined) {
+    console.log("UNIVERSAL_ROUTER_ADDRESS", UNIVERSAL_ROUTER_ADDRESS(chainId));
+  }  const allowance = usePermit2Allowance(
     maximumAmountIn ??
       (parsedAmounts[Field.INPUT]?.currency.isToken
         ? (parsedAmounts[Field.INPUT] as CurrencyAmount<Token>)
