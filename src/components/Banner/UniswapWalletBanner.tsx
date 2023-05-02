@@ -107,41 +107,7 @@ export default function UniswapWalletBanner() {
           e.stopPropagation()
           toggleHideUniswapWalletBanner()
         }}
-      />
-
-      <AutoColumn gap="8px">
-        <ThemedText.HeadlineMedium fontSize="24px" lineHeight="28px" color="white" maxWidth="60%">
-          <Trans>Uniswap in your pocket</Trans>
-        </ThemedText.HeadlineMedium>
-      </AutoColumn>
-
-      <ButtonRow>
-        {isIOS ? (
-          <>
-            <BannerButton
-              backgroundColor="white"
-              onClick={() => openDownloadApp(InterfaceElementName.UNISWAP_WALLET_BANNER_DOWNLOAD_BUTTON)}
-            >
-              <AppleLogo width={14} height={14} />
-              <ThemedText.LabelSmall color="black" marginLeft="5px">
-                {!screenSize['xs'] ? <Trans>Download</Trans> : <Trans>Download app</Trans>}
-              </ThemedText.LabelSmall>
-            </BannerButton>
-
-            <BannerButton backgroundColor="black" onClick={openWalletMicrosite}>
-              <ThemedText.LabelSmall color="white">
-                <Trans>Learn more</Trans>
-              </ThemedText.LabelSmall>
-            </BannerButton>
-          </>
-        ) : (
-          <BannerButton backgroundColor="white" width="125px" onClick={openWalletMicrosite}>
-            <ThemedText.LabelSmall color="black">
-              <Trans>Learn more</Trans>
-            </ThemedText.LabelSmall>
-          </BannerButton>
-        )}
-      </ButtonRow>
+      /> 
     </PopupContainer>
   )
 }
