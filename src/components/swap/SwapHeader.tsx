@@ -34,8 +34,7 @@ export default function SwapHeader({ allowedSlippage }: { allowedSlippage: Perce
         <RowFixed style={{ gap: '8px' }}>
           <TextHeader className={subhead}>
             <Trans>Swap</Trans>
-          </TextHeader>
-          {fiatOnRampButtonEnabled && <SwapBuyFiatButton />}
+          </TextHeader> 
         </RowFixed>
         <RowFixed>
           <SettingsTab placeholderSlippage={allowedSlippage} />

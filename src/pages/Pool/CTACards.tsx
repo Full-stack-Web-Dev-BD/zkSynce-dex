@@ -68,27 +68,7 @@ export default function CTACards() {
   const { infoLink } = getChainInfoOrDefault(chainId)
 
   return (
-    <CTASection>
-      <CTA href="https://support.uniswap.org/hc/en-us/categories/8122334631437-Providing-Liquidity-">
-        <ResponsiveColumn>
-          <HeaderText>
-            <Trans>Learn about providing liquidity</Trans> ↗
-          </HeaderText>
-          <ThemedText.DeprecatedBody fontWeight={400} style={{ alignItems: 'center', display: 'flex' }}>
-            <Trans>Check out our v3 LP walkthrough and migration guides.</Trans>
-          </ThemedText.DeprecatedBody>
-        </ResponsiveColumn>
-      </CTA>
-      <CTA data-testid="cta-infolink" href={infoLink + 'pools'}>
-        <ResponsiveColumn>
-          <HeaderText style={{ alignSelf: 'flex-start' }}>
-            <Trans>Top pools</Trans> ↗
-          </HeaderText>
-          <ThemedText.DeprecatedBody fontWeight={400} style={{ alignSelf: 'flex-start' }}>
-            <Trans>Explore Uniswap Analytics.</Trans>
-          </ThemedText.DeprecatedBody>
-        </ResponsiveColumn>
-      </CTA>
+    <CTASection> 
     </CTASection>
   )
 }

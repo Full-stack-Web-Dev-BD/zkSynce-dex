@@ -65,23 +65,12 @@ export const PageTabs = () => {
     <>
       <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
         <Trans>Swap</Trans>
-      </MenuItem>
-      <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
-        <Trans>Tokens</Trans>
-      </MenuItem>
-      {!shouldDisableNFTRoutes && (
-        <MenuItem dataTestId="nft-nav" href="/nfts" isActive={isNftPage}>
-          <Trans>NFTs</Trans>
-        </MenuItem>
-      )}
+      </MenuItem> 
       <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
         <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Pools</Trans>
         </MenuItem>
-      </Box>
-      <Box marginY={{ sm: '4', md: 'unset' }}>
-        <MenuDropdown />
-      </Box>
+      </Box> 
     </>
   )
 }
@@ -110,31 +99,19 @@ const Navbar = ({ blur }: { blur: boolean }) => {
                   })
                 }}
               />
-            </Box>
-            {!isNftPage && (
+            </Box> 
               <Box display={{ sm: 'flex', lg: 'none' }}>
                 <ChainSelector leftAlign={true} />
-              </Box>
-            )}
+              </Box> 
             <Row display={{ sm: 'none', lg: 'flex' }}>
               <PageTabs />
             </Row>
-          </Box>
-          <Box className={styles.searchContainer}>
-            <SearchBar />
-          </Box>
+          </Box> 
           <Box className={styles.rightSideContainer}>
-            <Row gap="12">
-              <Box position="relative" display={{ sm: 'flex', navSearchInputVisible: 'none' }}>
-                <SearchBar />
-              </Box>
-              {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
-              {!isNftPage && (
+            <Row gap="12"> 
                 <Box display={{ sm: 'none', lg: 'flex' }}>
                   <ChainSelector />
-                </Box>
-              )}
-
+                </Box>  
               <Web3Status />
             </Row>
           </Box>

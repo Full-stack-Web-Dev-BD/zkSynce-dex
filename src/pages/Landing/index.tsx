@@ -346,20 +346,12 @@ export default function Landing() {
             <Glow />
           </GlowContainer>
           <ContentContainer isDarkMode={isDarkMode}>
-            <TitleText isDarkMode={isDarkMode}>
-              {shouldDisableNFTRoutes ? (
-                <Trans>Trade crypto with confidence</Trans>
-              ) : (
-                <Trans>Trade crypto and NFTs with confidence</Trans>
-              )}
+            <TitleText isDarkMode={isDarkMode}> 
+                <Trans>Trade crypto with confidence</Trans> 
             </TitleText>
             <SubTextContainer>
-              <SubText>
-                {shouldDisableNFTRoutes ? (
-                  <Trans>Buy, sell, and explore tokens</Trans>
-                ) : (
-                  <Trans>Buy, sell, and explore tokens and NFTs</Trans>
-                )}
+              <SubText> 
+                  <Trans>Buy, sell, and explore tokens</Trans> 
               </SubText>
             </SubTextContainer>
             <ActionsContainer>
@@ -374,34 +366,8 @@ export default function Landing() {
                   </ButtonCTAText>
                 </ButtonCTA>
               </TraceEvent>
-            </ActionsContainer>
-            <LearnMoreContainer
-              onClick={() => {
-                cardsRef?.current?.scrollIntoView({ behavior: 'smooth' })
-              }}
-            >
-              <Trans>Learn more</Trans>
-              <LearnMoreArrow />
-            </LearnMoreContainer>
-          </ContentContainer>
-          <AboutContentContainer isDarkMode={isDarkMode}>
-            <CardGrid cols={2} ref={cardsRef}>
-              {MAIN_CARDS.map(({ darkBackgroundImgSrc, lightBackgroundImgSrc, ...card }) => (
-                <Card
-                  {...card}
-                  backgroundImgSrc={isDarkMode ? darkBackgroundImgSrc : lightBackgroundImgSrc}
-                  key={card.title}
-                />
-              ))}
-            </CardGrid>
-            <CardGrid cols={3}>
-              {MORE_CARDS.map(({ darkIcon, lightIcon, ...card }) => (
-                <Card {...card} icon={isDarkMode ? darkIcon : lightIcon} key={card.title} type={CardType.Secondary} />
-              ))}
-            </CardGrid>
-            <ProtocolBanner />
-            <AboutFooter />
-          </AboutContentContainer>
+            </ActionsContainer> 
+          </ContentContainer> 
         </PageContainer>
       )}
     </Trace>

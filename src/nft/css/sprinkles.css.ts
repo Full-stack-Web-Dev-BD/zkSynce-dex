@@ -166,7 +166,7 @@ export const vars = createGlobalTheme(':root', {
     white: '#FFF',
 
     // new uniswap colors:
-    blue400: '#4C82FB',
+    blue400: '#8c52ff',
     blue200: '#ADBCFF30',
     pink400: '#FB118E',
     red700: '#530f10',
@@ -201,8 +201,8 @@ export const vars = createGlobalTheme(':root', {
     accentTextLightTertiary: 'rgba(255, 255, 255, 0.12)',
     outline: 'rgba(153, 161, 189, 0.24)',
     lightGrayOverlay: '#99A1BD14',
-    accentActiveSoft: '#4c82fb3d',
-    accentActive: '#4C82FB',
+    accentActiveSoft: '#8c52ff3d',
+    accentActive: '#8c52ff',
   },
   border: {
     transculent: '1.5px solid rgba(0, 0, 0, 0.1)',

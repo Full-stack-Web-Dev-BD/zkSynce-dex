@@ -31,16 +31,16 @@
   <path
     d="M7.01397 31.6276C7.15338 32.8443 7.85048 33.326 9.27001 33.4654C10.6895 33.6048 11.5007 33.5161 12.578 33.6048C13.4779 33.6809 14.2891 34.1498 14.5806 33.985C14.8468 33.8456 14.6947 33.326 14.3398 32.9964C13.8708 32.5655 13.2244 32.274 12.0964 32.1599C12.3245 31.5389 12.2612 30.6644 11.9063 30.1954C11.3993 29.511 10.4614 29.2068 9.27001 29.3335C8.02792 29.4856 6.83652 30.1067 7.01397 31.6276Z"
     fill="url(#paint3_linear_304_15139)" />
-  <rect x="22" y="3" width="17" height="36" rx="6" fill="#4C82FB" fill-opacity="0.24" />
+  <rect x="22" y="3" width="17" height="36" rx="6" fill="#8c52ff" fill-opacity="0.24" />
   <g clip-path="url(#clip2_304_15139)">
     <path
       d="M30.5001 25.0833C33.0314 25.0833 35.0834 23.0313 35.0834 20.5C35.0834 17.9687 33.0314 15.9166 30.5001 15.9166C27.9688 15.9166 25.9167 17.9687 25.9167 20.5C25.9167 23.0313 27.9688 25.0833 30.5001 25.0833Z"
-      stroke="#4C82FB" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M25.9167 20.5H35.0834" stroke="#4C82FB" stroke-width="0.825" stroke-linecap="round"
+      stroke="#8c52ff" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M25.9167 20.5H35.0834" stroke="#8c52ff" stroke-width="0.825" stroke-linecap="round"
       stroke-linejoin="round" />
     <path
       d="M30.5001 15.9166C31.6465 17.1717 32.298 18.8005 32.3334 20.5C32.298 22.1994 31.6465 23.8282 30.5001 25.0833C29.3537 23.8282 28.7022 22.1994 28.6667 20.5C28.7022 18.8005 29.3537 17.1717 30.5001 15.9166V15.9166Z"
-      stroke="#4C82FB" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round" />
+      stroke="#8c52ff" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   <rect x="0.75" y="0.75" width="40.5" height="40.5" rx="8.25" stroke="#1B2236" stroke-width="0.5" />
   <defs>
