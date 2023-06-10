@@ -118,7 +118,7 @@ exports[`SwapBuyFiatButton.tsx matches base snapshot 1`] = `
 .c5 {
   height: 8px;
   width: 8px;
-  background-color: #8c52ff;
+  background-color: #578e4c;
   border-radius: 50%;
 }
 
